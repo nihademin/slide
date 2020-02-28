@@ -1,0 +1,64 @@
+#slider{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    #btnLeft,#btnRight{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #btnLeft{
+        left: 25px;
+    }
+    #btnRight{
+        right: 25px;
+    }
+    .slide-item{
+        height: 80vh;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+        transition: scale(4);
+        &.active{
+            visibility: visible;
+            opacity: 1;
+            left: 0;
+            transition: .4s;
+            transform: scale();
+
+        }
+        &:nth-child(1){
+            background: url(../Photo/AdobeStock_62655888-cover-1200x628.jpg) no-repeat center center /cover;
+           
+        }
+        &:nth-child(2){
+            background: url(../Photo/baby-steps-e1483109024926-1200x628.jpg)no-repeat center center /cover;
+           
+
+        }
+        &:nth-child(3){
+            background: url(../Photo/is-this-dutch-classic-finally-as-cool-as-a-bmw-1476934583636-1200x628.jpg)no-repeat center center /cover;
+           
+
+        }
+        &:nth-child(4){
+            background: url(../Photo/oscarjerome-1200x628.jpg)no-repeat center center /cover;
+           
+
+        }
+        &:nth-child(5){
+            background: url(../Photo/Screenshot-3-1200x628.png)no-repeat center center /cover;
+            
+
+        }
+        &:nth-child(6){
+            background: url(../Photo/XEEKCBLJWNEQRE4SATLVJI3Z3M.jpg)no-repeat center center /cover;
+          
+
+        }
+    }
+}
